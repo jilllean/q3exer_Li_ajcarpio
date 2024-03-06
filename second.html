@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Page</title>
+</head>
+<body>
+    <img id="pic" src="images/ocean.jpg" style="height: 600px; width: 400px; margin-left: 25%;">
+
+    <button onclick="changePic()">Change Image</button>
+    <script>
+        function changePic()
+        {
+            pic.src="images/mountain.jpg";
+        }
+    </script>
+    
+    <button onclick="changeBack()">Revert Back to Original</button>
+    <script>
+        function changeBack()
+        {
+            pic.src="images/ocean.jpg";
+        }
+    </script>
+</body>
+</html>
